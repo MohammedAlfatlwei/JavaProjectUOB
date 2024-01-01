@@ -25,7 +25,12 @@ public class IT_UOB_PROJECT {
 
         // Temporary Output
 
-        System.out.println("Product Name : " + productName + "\nAmount Available : " + productAmountAvailable + "\nCost : " + productCost + "\nPrice : " + productPrice + "\nAmount Sold : " + productAmountSold);
+        System.out.println(
+                "Product Name : " + productName +
+                        "\nAmount Available : " + productAmountAvailable +
+                        "\nCost : " + productCost +
+                        "\nPrice : " + productPrice +
+                        "\nAmount Sold : " + productAmountSold);
 
 
     }

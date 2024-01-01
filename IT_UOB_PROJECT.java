@@ -33,5 +33,7 @@ public class IT_UOB_PROJECT {
                         "\nAmount Sold : " + productAmountSold);
 
 
+        scanner.close();
+        
     }
 }

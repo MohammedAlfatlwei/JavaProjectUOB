@@ -16,6 +16,9 @@ public class IT_UOB_PROJECT {
         what im trying to do is to take a number form the user of how many product they sold 
          * and then using that ualue (the number) in while loop condtion to rpeat over and over the process of calcualting 
          */
+        /*
+         * i like that to write comment hahaha
+         */
             
         
         Scanner scanner = new Scanner(System.in);

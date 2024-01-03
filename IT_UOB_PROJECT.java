@@ -4,7 +4,20 @@ import java.util.Scanner;
  */
 public class IT_UOB_PROJECT {
     public static void main(String[] args) {
+        /* 
+        System.out.print("how many product you sold: ");
+        Scanner productnum = new Scanner(System.in); 
+        int sales_num = productnum.nextInt();
+        */ 
 
+        /*i dont understand why the compiler rejecting me when i use (while loop) and (Do-while loop) */
+
+        /*
+        what im trying to do is to take a number form the user of how many product they sold 
+         * and then using that ualue (the number) in while loop condtion to rpeat over and over the process of calcualting 
+         */
+            
+        
         Scanner scanner = new Scanner(System.in);
 
         System.out.print("Product Name : ");
@@ -22,7 +35,9 @@ public class IT_UOB_PROJECT {
         System.out.print("The Amount Sold of " + productName + " : ");
         int productAmountSold = scanner.nextInt();
 
-        double totalSales = productAmountSold * productPrice ; 
+        double total_product_slaes = productAmountSold * productPrice ;
+        
+        
         /*
          * we are gonna discuss the rest of the program later such as 
          * the monthly income of all the product 
@@ -35,6 +50,7 @@ public class IT_UOB_PROJECT {
 
         // Temporary Output
         System.out.println("________________________________________________________________________________________");
+        System.out.println("________________________________________________________________________________________");
 
 
         System.out.println(
@@ -43,7 +59,7 @@ public class IT_UOB_PROJECT {
                         "\nCost : " + productCost +
                         "\nPrice : " + productPrice +
                         "\nAmount Sold : " + productAmountSold +
-                        "\ntotal sales : " + totalSales
+                        "\ntotal sales : " + total_product_slaes + "$"
                         );
 
 

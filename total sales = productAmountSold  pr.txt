@@ -1,0 +1,3 @@
+total sales = productAmountSold * productPrice 
+product he sales = for eaxample 4 
+we take that four and use inside the loop so the loop calculate the product 4 times 

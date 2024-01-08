@@ -12,10 +12,11 @@ public class Main {
             productSales,productDailySales, grossIncome,
             profitPerProduct,monthlyProfit, yearlyProfit,
             amountUnsold, spendings, totalProfitAfterSpendings,
-            totalProfit;
+            totalProfit ;
 
 
         Scanner scanner = new Scanner(System.in);
+
         System.out.print("how many products do you have? ");
         int amountOfProducts = scanner.nextInt();
 
@@ -23,11 +24,19 @@ public class Main {
 
         while (i < amountOfProducts) {
 
-            System.out.print("What is the name of the product? ");
-            name = scanner.nextLine();
+            Scanner scanner1 = new Scanner(System.in);
+            System.out.print("\n What is the name of the product? ");
+            name = scanner1.nextLine();
+
+            /*i notcied that when i change the function .nextline to .nextint the console read it with no prob 
+             * then i thought it could be possible that one scanner read one type of variables only so i just 
+             * add another scanner (scanner1)so that it read only (lines)
+             */
+
 
             System.out.print("\n How much of the product is available in stock? ");
             amountInStock = scanner.nextInt();
+
 
             System.out.print("\n What is the price of the product? ");
             productPrice = scanner.nextInt();
@@ -59,12 +68,13 @@ public class Main {
 
             totalProfitAfterSpendings = totalProfit - spendings;
 
+            System.out.println("_________________________________________________________________________");
             System.out.println("the gross income is : " + grossIncome
-            + "the monthly profit is : " + monthlyProfit
-            + "the total profit for the whole year : " + yearlyProfit
-            + "the name of the product and how much got sold : " + name + productSales
-            + "the amount unsold : " + amountUnsold
-            + "the total profit after all the spendings : " + totalProfitAfterSpendings);
+            + "\nthe monthly profit is : " + monthlyProfit
+            + "\nthe total profit for the whole year : " + yearlyProfit
+            + "\nthe name of the product and how much got sold : " + name + productSales
+            + "\nthe amount unsold : " + amountUnsold
+            + "\nthe total profit after all the spendings : " + totalProfitAfterSpendings);
 
             if (totalProfitAfterSpendings > 0)
                 System.out.print("this product has good income!");

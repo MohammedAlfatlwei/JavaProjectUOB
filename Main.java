@@ -81,7 +81,7 @@ public class Main {
             else
                 System.out.println("this product has bad income!");
 
-            i = i++;
+            i++;
 
             }
         }
